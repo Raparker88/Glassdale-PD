@@ -1,0 +1,29 @@
+.allCriminals {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.criminal__cards {
+    flex-basis: 30%;
+    border: solid 1px;
+    text-align: center;
+    margin: 5px;
+    
+}
+       
+
+.allOfficers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.officer__cards {
+    flex-basis: 30%;
+    border: solid 1px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    
+}
