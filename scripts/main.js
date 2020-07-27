@@ -9,3 +9,7 @@ listCriminalsToDOM()
 import { convictionSelect } from "./convictions/ConvictionSelect.js"
 
 convictionSelect()
+
+import { officerSelect } from "./officers/OfficerSelect.js"
+
+officerSelect()
