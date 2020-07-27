@@ -21,6 +21,5 @@ export const listOfficersToDOM = () => {
         
     })
     
-
-    
 }
+
