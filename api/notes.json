@@ -7,6 +7,14 @@
       "content": "this is the content",
       "author": "Rebecca",
       "suspect": "Jane Doe"
+    },
+    {
+      "title": "kljl;kj",
+      "author": ";lkj;lj",
+      "suspect": "lkj;lj",
+      "content": ";lkjlkj",
+      "timeStamp": 1596054383821,
+      "id": 2
     }
   ]
 }

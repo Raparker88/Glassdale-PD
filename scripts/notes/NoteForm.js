@@ -25,6 +25,8 @@ const clickSaveNote = () => {
         // Change API state and application state
         saveNote(newNote)
 
+        render()
+
     }
 })
 }

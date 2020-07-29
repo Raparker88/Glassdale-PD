@@ -40,3 +40,14 @@
     height: 45em;
     overflow: auto;
 }
+
+.noteFormContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 20px;
+}
+
+.noteContainer {
+    flex-basis: 50%;
+}
