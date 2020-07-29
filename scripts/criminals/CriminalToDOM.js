@@ -26,7 +26,7 @@ eventHub.addEventListener("crimeChosen", (event) => {
 eventHub.addEventListener("officerChosen", (event) => {
     // id of selected officer
     const officerSelected = event.detail.officerThatWasChosen
-    // finding crime object containing id from officerSelected
+    // finding officer object containing id from officerSelected
     const officerArray = useOfficers()
     const foundOfficerObject = officerArray.find((officer) => {
         return parseInt(officerSelected) === officer.id

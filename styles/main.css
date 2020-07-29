@@ -27,3 +27,16 @@
     padding: 5px;
     
 }
+
+.officerNoteContainer {
+    display: flex;
+}
+
+.officersContainer {
+    flex-basis: 50%;
+}
+
+.criminalsContainer {
+    height: 45em;
+    overflow: auto;
+}

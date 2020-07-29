@@ -1,0 +1,12 @@
+{
+  "notes": [
+    {
+      "title": "My first note",
+      "timeStamp": "date",
+      "id": 1,
+      "content": "this is the content",
+      "author": "Rebecca",
+      "suspect": "Jane Doe"
+    }
+  ]
+}
