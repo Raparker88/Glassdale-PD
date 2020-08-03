@@ -1,4 +1,4 @@
-const contentElement = document.querySelector(".showWitnesses")
+const contentElement = document.querySelector(".witnessCriminalButton")
 const eventHub = document.querySelector(".container")
 
 export const witnessButton = () => {
@@ -12,4 +12,8 @@ eventHub.addEventListener("click", (event) => {
         const customEvent = new CustomEvent("showWitnesses")
         eventHub.dispatchEvent(customEvent)
     }
+})
+
+eventHub.addEventListener("showCriminals", (event) => {
+   witnessButton()
 })

@@ -7,6 +7,7 @@ import { noteList } from "./notes/NoteList.js"
 import "./criminals/AssociateAlibi.js"
 import { witnessButton } from "./witnesses/WitnessButton.js"
 import "./witnesses/WitnessList.js"
+import "./criminals/ShowCriminalsButton.js"
 
 listOfficersToDOM()
 listCriminalsToDOM()

@@ -39,6 +39,10 @@ eventHub.addEventListener("officerChosen", (event) => {
     render(filteredCriminals)
 })
 
+eventHub.addEventListener("showCriminals", (event) => {
+    listCriminalsToDOM()
+})
+
 const render = (criminalArray) => {
     
     let criminalHTML = ""

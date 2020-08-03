@@ -9,20 +9,12 @@
       "suspect": "Jane Doe"
     },
     {
-      "title": "kljl;kj",
-      "author": ";lkj;lj",
-      "suspect": "lkj;lj",
-      "content": ";lkjlkj",
-      "timeStamp": 1596054383821,
+      "title": "Witness Statements",
+      "author": "Rebecca",
+      "suspect": "yet to be known",
+      "content": "Two witnesses said suspect drove a large pickup truck. Another two said He was wearing a car dealership hat. Also noteworthy is one witness mentioned he wasn't very tall. ",
+      "timeStamp": 1596480565560,
       "id": 2
-    },
-    {
-      "title": "Note",
-      "author": "Becca",
-      "suspect": "Burdette",
-      "content": "she did it",
-      "timeStamp": 1596076765368,
-      "id": 3
     }
   ]
 }
