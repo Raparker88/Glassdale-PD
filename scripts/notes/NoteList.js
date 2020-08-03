@@ -16,7 +16,7 @@ const render = (noteArray) => {
 
 }
 
-export const noteList = (noteArray) => {
+export const noteList = () => {
     getNotes().then(() => {
     const noteList = useNotes()
     render (noteList)

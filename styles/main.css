@@ -4,12 +4,25 @@
     justify-content: space-evenly;
 }
 
+.allWitnesses {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
 .criminal__cards {
     flex-basis: 30%;
     border: solid 1px;
     text-align: center;
     margin: 5px;
     
+}
+.witness__cards {
+    flex-basis:30%;
+    border:solid 1px;
+    text-align: center;
+    margin: 5px;
 }
        
 
@@ -39,6 +52,7 @@
 .criminalsContainer {
     height: 45em;
     overflow: auto;
+    flex-basis: 80%;
 }
 
 .noteFormContainer {
@@ -50,4 +64,17 @@
 
 .noteContainer {
     flex-basis: 50%;
+}
+
+.criminalsAndAlibis {
+    display:flex
+}
+
+.associateAlibis {
+    flex-basis: 20%;
+}
+
+textarea{
+    width: 20em;
+    height: 10em;
 }
