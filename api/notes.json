@@ -1,20 +1,100 @@
 {
   "notes": [
     {
-      "title": "My first note",
-      "timeStamp": "date",
-      "id": 1,
-      "content": "this is the content",
-      "author": "Rebecca",
-      "suspect": "Jane Doe"
-    },
-    {
       "title": "Witness Statements",
       "author": "Rebecca",
       "suspect": "yet to be known",
       "content": "Two witnesses said suspect drove a large pickup truck. Another two said He was wearing a car dealership hat. Also noteworthy is one witness mentioned he wasn't very tall. ",
       "timeStamp": 1596480565560,
+      "id": 1
+    },
+    {
+      "title": "Extortion Convicts",
+      "author": "Rebecca",
+      "suspect": "Alek Hane, Hilario Leuschke, and Ubaldo Doyle",
+      "content": "These suspects have previous convictions of extortion",
+      "timeStamp": 1596480923245,
       "id": 2
+    },
+    {
+      "title": "Important Date",
+      "author": "Rebecca Parker",
+      "suspect": "not known",
+      "content": "Crime happened five years ago which would be 8/3/2015. \nHilario and Ubaldo were out of jail by then",
+      "timeStamp": 1596482982929,
+      "id": 3
+    },
+    {
+      "title": "Owns a pet",
+      "author": "Rebecca",
+      "suspect": "Ilene Miller",
+      "content": "associate of Ubaldo Doyle alibi was walking a dog",
+      "timeStamp": 1596483119337,
+      "id": 4
+    },
+    {
+      "title": "Burglary convicts",
+      "author": "Rebecca",
+      "suspect": "Adah Rolfson",
+      "content": "two associates with fishy alibis",
+      "timeStamp": 1596486177815,
+      "id": 5
+    },
+    {
+      "title": "Work History",
+      "author": "Rebecca",
+      "suspect": "Lucio Botsford",
+      "content": "associate forest waelchi- test driving a car\nwork history: \n\"Nitzsche and Sons\",\n      \"Fritsch Group\",\n      \"Gutkowski Inc\"",
+      "timeStamp": 1596489238312,
+      "id": 6
+    },
+    {
+      "title": "Work History",
+      "author": "Rebecca Parker",
+      "suspect": "Cordie Carroll",
+      "content": "associate Maude Kovacek-test driving a car\nwork history:\"Romaguera and Sons\"\n",
+      "timeStamp": 1596489337376,
+      "id": 7
+    },
+    {
+      "title": "Work History",
+      "author": "Rebecca",
+      "suspect": "Dino Mante",
+      "content": "Associate Damon Glover - test driving a car\nwork history:\"Reichel and Sons\",\n      \"Zieme Group\",\n      \"Kuphal Group\",\n      \"Powlowski PLC\"\n    ],",
+      "timeStamp": 1596489444737,
+      "id": 8
+    },
+    {
+      "title": "Work History",
+      "author": "Rebecca ",
+      "suspect": "Clair Romaguera",
+      "content": "associate Loyal Ward - test driving a car\nwork history: Jacobson and Sons\",\n      \"Kuphal LLC\",\n      \"Russel LLC\",\n      \"Jerde Inc\"\nRomaguera is the same last name on Cordie Carroll's work history",
+      "timeStamp": 1596489621212,
+      "id": 9
+    },
+    {
+      "title": "Romaguera connection",
+      "author": "Rebecca ",
+      "suspect": "Alek Hane",
+      "content": "associate damon romaguera was disposing of body bags\narresting officer margaret Debrowski",
+      "timeStamp": 1596489936481,
+      "id": 10
+    },
+    {
+      "title": "Romaguera Connection",
+      "author": "Rebecca",
+      "suspect": "Cary Bauch",
+      "content": "worked at romaguera ltd",
+      "timeStamp": 1596490060535,
+      "id": 11
+    },
+    {
+      "title": "Romaguera Connection",
+      "author": "Rebecca ",
+      "suspect": "Romaguera",
+      "content": "all romagueras:\nClaire Romaguera\nDamon Romaguera\nLindsay Romaguera",
+      "timeStamp": 1596490106246,
+      "id": 12
     }
   ]
 }

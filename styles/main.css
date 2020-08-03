@@ -41,13 +41,11 @@
     
 }
 
-.officerNoteContainer {
+.notes {
     display: flex;
 }
 
-.officersContainer {
-    flex-basis: 50%;
-}
+
 
 .criminalsContainer {
     height: 45em;
@@ -60,6 +58,8 @@
     flex-direction: column;
     width: fit-content;
     margin: 20px;
+    flex-basis: 25%;
+    margin-right: auto;
 }
 
 .noteContainer {
@@ -79,7 +79,7 @@ textarea{
     height: 10em;
 }
 
-.witnessCriminalButton{
+.Buttons{
     margin: 20px;
 }
 

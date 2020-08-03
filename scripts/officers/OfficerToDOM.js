@@ -1,9 +1,14 @@
 import { useOfficers, getOfficers} from "./OfficerDataProvider.js"
 import { officerHTMLRepresentations } from "./OfficerHTML.js"
 
-const contentElement = document.querySelector (".officersContainer")
+const eventHub = document.querySelector(".container")
+const contentElement = document.querySelector (".criminalsContainer")
 
-export const listOfficersToDOM = () => {
+eventHub.addEventListener("showOfficers", (event) => {
+    listOfficersToDOM()
+})
+
+const listOfficersToDOM = () => {
     
     getOfficers().then(() => {
         const officerList = useOfficers()
