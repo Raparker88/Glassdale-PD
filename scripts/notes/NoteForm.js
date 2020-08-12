@@ -13,12 +13,12 @@ const clickSaveNote = () => {
         const title = document.querySelector("#note-title")
         const author = document.querySelector("#note-author")
         const content = document.querySelector("#note-content")
-        const suspect= document.querySelector("#noteForm--criminal").split("--")[1]
+        const suspect= document.querySelector("#noteForm--criminal")
         
         const newNote = {
             title: title.value,
             author: author.value,
-            suspect: suspect.value,
+            criminalId: suspect.value.split("--")[1],
             content: content.value,
             timeStamp: Date.now()
             // Key/value pairs here
