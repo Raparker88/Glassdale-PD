@@ -30,5 +30,8 @@ export const saveNote = note => {
 }
 
 export const useNotes = () => {
-    return notes.slice()
+    const sortedByDate = notes.sort((currentEntry, nextEntry) => {
+        return nextEntry.timeStamp - currentEntry.timeStamp
+    })
+    return sortedByDate.slice()
 }
