@@ -1,4 +1,6 @@
 import { saveNote } from "./NoteDataProvider.js"
+import { getCriminals, useCriminals } from "../criminals/CriminalDataProvider.js"
+
 
 const contentTarget = document.querySelector(".noteFormContainer")
 const eventHub = document.querySelector(".container")
@@ -10,8 +12,8 @@ const clickSaveNote = () => {
         // Make a new object representation of a note
         const title = document.querySelector("#note-title")
         const author = document.querySelector("#note-author")
-        const suspect = document.querySelector("#note-suspect")
         const content = document.querySelector("#note-content")
+        const suspect= document.querySelector("#noteForm--criminal").split("--")[1]
         
         const newNote = {
             title: title.value,
@@ -32,18 +34,33 @@ const clickSaveNote = () => {
 }
 
 const render = () => {
-    contentTarget.innerHTML = `
+    getCriminals()
+    .then(() => {
+        const criminals = useCriminals()
+    
+        contentTarget.innerHTML = `
         <input type="text" id="note-title" placeholder="Title">
         <input type="text" id="note-author" placeholder="Your Name">
-        <input type="text" id="note-suspect" placeholder="Regarding Suspect">
+        <select id="noteForm--criminal" class="criminalSelect">
+            <option value="0">Please select a criminal...</option>
+            ${
+            criminals.map(criminal => {
+                return `<option value="criminal--${ criminal.id }">${ criminal.name }</option>`
+            }).join('')
+            }
+        </select>
         <textarea id="note-content" placeholder="Write Note Here"></textarea>
-            
-
         <button id="saveNote">Save Note</button>
-    `
+        `
+    })
 }
 
 export const NoteForm = () => {
     render()
     clickSaveNote()
 }
+
+
+
+
+
