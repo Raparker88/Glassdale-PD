@@ -8,9 +8,9 @@ const contentElement = document.querySelector(".noteContainer")
 
 const render = (noteArray, criminalArray) => {
     const HTMLString = noteArray.map(note => {
-        let relatedCriminal = criminalArray.find(criminal => criminal.id === parseInt(note.criminalId))
+        let relatedCriminal = criminalArray.find(criminal => criminal.id === note.criminalId)
         if (relatedCriminal === undefined){
-            if (note.criminalId === undefined) {
+            if (note.criminalId === 0) {
                 relatedCriminal = {name: "N/A"}
             }else {
                 relatedCriminal = {name: note.criminalId}

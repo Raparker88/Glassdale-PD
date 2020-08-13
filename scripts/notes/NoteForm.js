@@ -14,11 +14,11 @@ const clickSaveNote = () => {
         const author = document.querySelector("#note-author")
         const content = document.querySelector("#note-content")
         const suspect= document.querySelector("#noteForm--criminal")
-        
+
         const newNote = {
             title: title.value,
             author: author.value,
-            criminalId: suspect.value.split("--")[1],
+            criminalId: parseInt(suspect.value),
             content: content.value,
             timeStamp: Date.now()
             // Key/value pairs here
@@ -45,7 +45,7 @@ const render = () => {
             <option value="0">Please select a criminal...</option>
             ${
             criminals.map(criminal => {
-                return `<option value="criminal--${ criminal.id }">${ criminal.name }</option>`
+                return `<option value="${ criminal.id }">${ criminal.name }</option>`
             }).join('')
             }
         </select>
