@@ -3,9 +3,9 @@
     {
       "title": "This is a new note",
       "author": "Rebecca",
-      "content": "my note edited double edited. test test",
+      "content": "my note edited double edited. test test. edit 2",
       "criminalId": 9,
-      "timeStamp": 1597695226366,
+      "timeStamp": "1597695226366",
       "id": 1
     },
     {
@@ -19,9 +19,9 @@
     {
       "title": "Testing new notes",
       "author": "Becca",
-      "content": "can I still save a note?? edited-I can!! and I can edit some more. test",
+      "content": "can I still save a note?? edited-I can!! and I can edit some more. test. edit 1",
       "criminalId": 28,
-      "timeStamp": 1597695259650,
+      "timeStamp": "1597695259650",
       "id": 3
     }
   ]
