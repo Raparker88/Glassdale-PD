@@ -16,12 +16,15 @@ eventHub.addEventListener("editNoteClicked", event =>{
     const content = document.querySelector("#dialog-content")
     const suspect= document.querySelector("#dialog--criminal")
     const noteId = document.querySelector("#noteId")
+    const timeStamp = document.querySelector("#noteTime")
+
 
     title.value = chosenNote.title
     author.value = chosenNote.author
     content.value = chosenNote.content
     suspect.value = chosenNote.criminalId
     noteId.value = chosenNote.id
+    timeStamp.value = chosenNote.timeStamp
 
 })
 
@@ -32,6 +35,7 @@ eventHub.addEventListener("click", event => {
         const content = document.querySelector("#dialog-content")
         const suspect= document.querySelector("#dialog--criminal")
         const noteId = document.querySelector("#noteId")
+        const timeStamp = document.querySelector("#noteTime")
 
 
         const newNote = {
@@ -39,14 +43,13 @@ eventHub.addEventListener("click", event => {
             author: author.value,
             content: content.value,
             criminalId: parseInt(suspect.value),
-            timeStamp: Date.now(),
+            timeStamp: timeStamp.value,
             id: noteId.value
 
         }
 
         editNote(newNote)
-        const theDialog = event.target.parentNode
-        theDialog.close()
+        
     }else if (event.target.id === "closeDialog"){
         const theDialog = event.target.parentNode.parentNode
         theDialog.close()
@@ -70,6 +73,7 @@ export const renderEditDialog = () => {
             </select>
             <textarea id="dialog-content" placeholder="Write Note Here"></textarea>
             <input type="hidden" id="noteId" value="">
+            <input type="hidden" id="noteTime" value="">
             <button id="closeDialog">Close</button>
             <button id="dialogSaveNote">Save Note</button>
         </div>

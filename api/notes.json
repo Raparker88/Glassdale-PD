@@ -3,25 +3,25 @@
     {
       "title": "This is a new note",
       "author": "Rebecca",
-      "content": "my note edited double edited",
+      "content": "my note edited double edited. test test",
       "criminalId": 9,
-      "timeStamp": 1597692812777,
+      "timeStamp": 1597695226366,
       "id": 1
     },
     {
       "title": "another new note",
       "author": "Rebecca Parker",
-      "content": "Ubaldo did it edited",
+      "content": "Ubaldo did it edited double edited. this is the last note",
       "criminalId": 16,
-      "timeStamp": 1597692365729,
+      "timeStamp": "1597695169156",
       "id": 2
     },
     {
       "title": "Testing new notes",
       "author": "Becca",
-      "content": "can I still save a note?? edited-I can!!",
+      "content": "can I still save a note?? edited-I can!! and I can edit some more. test",
       "criminalId": 28,
-      "timeStamp": 1597692858488,
+      "timeStamp": 1597695259650,
       "id": 3
     }
   ]
