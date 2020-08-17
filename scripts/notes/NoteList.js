@@ -25,6 +25,14 @@ const render = (noteArray, criminalArray) => {
 
 }
 
+
+eventHub.addEventListener("noteStateChanged", event => {
+        const notes = useNotes()
+        const criminals = useCriminals()
+        render (notes, criminals)
+        
+})
+
 export const noteList = () => {
     getNotes()
     .then(getCriminals)
@@ -32,12 +40,6 @@ export const noteList = () => {
         const notes = useNotes()
         const criminals =useCriminals()
         render (notes, criminals)
-    eventHub.addEventListener("noteStateChanged", event => {
-            const notes = useNotes()
-            const criminals = useCriminals()
-            render (notes, criminals)
-            
-    })
     
     })
 }
