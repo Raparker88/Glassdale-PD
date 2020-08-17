@@ -24,10 +24,13 @@ const clickSaveNote = () => {
             // Key/value pairs here
         }
 
-        // Change API state and application state
-        saveNote(newNote)
+        if (title.value && author.value && content.value && suspect.value != "0"){
+            saveNote(newNote)
+            render()
+        }else{
+            window.alert("Please fill in all fields")
+        }
 
-        render()
 
     }
 })

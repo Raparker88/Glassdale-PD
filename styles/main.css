@@ -86,3 +86,8 @@ textarea{
 .filters {
     margin: 20px;
 }
+
+.dialogBox {
+    display: flex;
+    flex-direction: column;
+}  
