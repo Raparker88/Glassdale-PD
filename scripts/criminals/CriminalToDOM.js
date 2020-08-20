@@ -1,12 +1,15 @@
 import { useCriminals, getCriminals} from "./CriminalDataProvider.js"
 import { criminalHTMLRepresentations } from "./CriminalHTML.js"
 import { useConvictions } from "../convictions/ConvictionProvider.js"
-import { useOfficers } from "../officers/OfficerDataProvider.js"
+import { getFacilities, useFacilities } from "../facilities/FacilitiesProvider.js"
+import { getCriminalFacilities, useCriminalFacilities } from "../facilities/CriminalFacilityProvider.js"
 
 const contentElement = document.querySelector (".criminalsContainer")
 const eventHub = document.querySelector(".container")
 
 let criminals = []
+let facilities = []
+let criminalFacilities = []
 let foundCriminals = {
     officer: "0",
     crime: "0"
@@ -46,12 +49,19 @@ eventHub.addEventListener("officerChosen", (event) => {
 })
 
 eventHub.addEventListener("showCriminals", (event) => {
-    listCriminalsToDOM()
+    filterCriminals()
+    render()
 })
 
 const render = () => {
     
-    const criminalHTML = criminals.map(criminal => criminalHTMLRepresentations(criminal)).join('')
+    const criminalHTML = criminals.map(criminal => {
+        let facilityRelationships = criminalFacilities.filter(cf => cf.criminalId === criminal.id)
+        let foundFacilities = facilityRelationships.map (fr => facilities.find(f => f.id === fr.facilityId))
+        return criminalHTMLRepresentations(criminal, foundFacilities)
+    }).join('')
+
+    
     
     contentElement.innerHTML = `
         <h2>Criminals</h2>
@@ -64,7 +74,12 @@ const render = () => {
     
 export const listCriminalsToDOM = () => {
         
-    getCriminals().then(() => {
+    getCriminals()
+    .then(getFacilities)
+    .then(getCriminalFacilities)
+    .then(() => {
+        facilities = useFacilities()
+        criminalFacilities = useCriminalFacilities()
         criminals = useCriminals()
         render ()
     })

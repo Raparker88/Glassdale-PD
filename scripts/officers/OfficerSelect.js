@@ -3,7 +3,7 @@
 import { useOfficers, getOfficers } from "./OfficerDataProvider.js"
 
 const eventHub = document.querySelector(".container")
-const contentTarget = document.querySelector(".filters__crime")
+const contentTarget = document.querySelector(".filters__officer")
 
 contentTarget.addEventListener("change", (event) => {
     if(event.target.id === "officerSelect") {

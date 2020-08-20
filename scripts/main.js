@@ -9,6 +9,8 @@ import "./witnesses/WitnessList.js"
 import {addCriminalButton} from "./criminals/ShowCriminalsButton.js"
 import { addOfficerButton } from "./officers/OfficerButton.js"
 import "./officers/OfficerToDOM.js"
+import { addFacilitiesButton } from "./facilities/FacilitiesButton.js"
+import "./facilities/FacilityList.js"
 
 
 listCriminalsToDOM()
@@ -19,3 +21,4 @@ noteList()
 witnessButton()
 addCriminalButton()
 addOfficerButton()
+addFacilitiesButton()

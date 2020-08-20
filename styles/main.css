@@ -18,6 +18,14 @@
     margin: 5px;
     
 }
+
+.facility__card {
+    flex-basis: 30%;
+    border: solid 1px;
+    text-align: center;
+    margin: 5px;
+}
+
 .witness__cards {
     flex-basis:30%;
     border:solid 1px;
@@ -85,9 +93,16 @@ textarea{
 
 .filters {
     margin: 20px;
+    display: flex;
 }
 
 .dialogBox {
     display: flex;
     flex-direction: column;
 }  
+
+ul {
+    width: fit-content;
+    text-align: left;
+    margin: auto;
+}
