@@ -25,7 +25,7 @@ const render = () => {
         let facilityRelationships = criminalFacilities.filter(cf => cf.facilityId === facility.id)
         let foundCriminals = facilityRelationships.map(fr => criminals.find(c => c.id === fr.criminalId))
         return facilityHTML(facility, foundCriminals)
-    })
+    }).join('')
     contentTarget.innerHTML =  `
     <h2>Facilities</h2>
     <section class="allCriminals">

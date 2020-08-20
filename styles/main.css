@@ -16,6 +16,7 @@
     border: solid 1px;
     text-align: center;
     margin: 5px;
+    padding-bottom: 7px;
     
 }
 
@@ -24,6 +25,7 @@
     border: solid 1px;
     text-align: center;
     margin: 5px;
+    padding-bottom: 7px;
 }
 
 .witness__cards {
@@ -105,4 +107,8 @@ ul {
     width: fit-content;
     text-align: left;
     margin: auto;
+}
+
+button {
+    margin: 5px;
 }
