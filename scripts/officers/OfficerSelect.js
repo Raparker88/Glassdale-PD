@@ -35,7 +35,7 @@ export const officerSelect = () => {
                 <option value="0">Please select an officer...</option>
                 ${
                 officerCollection.map(officer => {
-                    return `<option value = "${officer.id}">${officer.name}</option>`
+                    return `<option value = "${officer.name}">${officer.name}</option>`
                     }).join("")
                 }
                 </select>
